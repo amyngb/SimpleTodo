@@ -30,7 +30,7 @@ namespace SimpleTodo
             if (!string.IsNullOrEmpty(todo))
             {
                 
-                responseMessage = $"The todo was added. This HTTP triggered function executed successfully.";
+                responseMessage = $"The todo '{todo}' was added. This HTTP triggered function executed successfully.";
                 response = new OkObjectResult(responseMessage);
             } else
             {
